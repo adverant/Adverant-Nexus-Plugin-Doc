@@ -78,15 +78,13 @@ async function processAPInvoice(invoiceFile: Buffer, vendorId?: string) {
 }
 ```
 
-### Results
+### Expected Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Processing Time | 8 min/invoice | 45 sec/invoice | 91% reduction |
-| Error Rate | 4.2% | 0.3% | 93% reduction |
-| Staff Required | 5 FTEs | 1 FTE | 80% reduction |
-| Monthly Cost | $32,000 | $8,500 | 73% savings |
-| Vendor Satisfaction | 72% | 94% | +22 points |
+- **Reduced processing time** per invoice through automation
+- **Lower error rates** with AI-powered extraction
+- **Fewer staff hours** required for data entry
+- **Cost savings** on monthly processing
+- **Improved vendor satisfaction** through faster payments
 
 ---
 
@@ -204,15 +202,13 @@ def batch_due_diligence(contract_paths: list) -> dict:
     return results
 ```
 
-### Results
+### Expected Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Review Time | 3 hours/contract | 25 min/contract | 86% reduction |
-| Due Diligence Cycle | 6 weeks | 10 days | 77% faster |
-| Missed Obligations | 12/year | 0/year | 100% reduction |
-| Attorney Utilization | 40% strategic work | 75% strategic work | +35 points |
-| Cost per Contract | $450 | $85 | 81% savings |
+- **Reduced review time** per contract through AI extraction
+- **Faster due diligence cycles** with automated analysis
+- **Fewer missed obligations** via deadline tracking
+- **Higher attorney utilization** on strategic work
+- **Lower cost per contract** for routine analysis
 
 ---
 
@@ -347,15 +343,13 @@ async function validateClaim(claimData: MergedClaimData) {
 }
 ```
 
-### Results
+### Expected Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Processing Time | 15 days | 2 days | 87% reduction |
-| Auto-Adjudication Rate | 0% | 68% | N/A |
-| Coding Errors | 8.5% | 1.2% | 86% reduction |
-| Denial Rework Cost | $2.3M/year | $380K/year | 83% savings |
-| Provider Satisfaction | 61% | 89% | +28 points |
+- **Reduced processing time** through automated extraction
+- **Higher auto-adjudication rate** for routine claims
+- **Fewer coding errors** with AI validation
+- **Lower denial rework costs** via accurate coding
+- **Improved provider satisfaction** with faster processing
 
 ---
 
@@ -530,15 +524,13 @@ class MortgageDocumentProcessor:
         }
 ```
 
-### Results
+### Expected Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Document Review Time | 5 days | 4 hours | 97% reduction |
-| Application-to-Close | 45 days | 21 days | 53% faster |
-| Documents per Reviewer | 50/day | 400/day | 8x throughput |
-| Data Entry Errors | 6.2% | 0.4% | 94% reduction |
-| Customer Satisfaction | 3.2/5 | 4.6/5 | +44% |
+- **Faster document review** through AI extraction
+- **Shorter application-to-close cycles**
+- **Higher throughput** per reviewer
+- **Fewer data entry errors** with automated validation
+- **Improved customer satisfaction** with faster approvals
 
 ---
 
@@ -721,15 +713,13 @@ async function crossValidateShipmentData(data: any) {
 }
 ```
 
-### Results
+### Expected Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Document Processing Time | 45 min/shipment | 3 min/shipment | 93% reduction |
-| Customs Clearance Time | 4.2 days avg | 1.1 days avg | 74% faster |
-| Compliance Violations | 340/year | 12/year | 96% reduction |
-| Annual Penalty Costs | $4M | $180K | 96% savings |
-| Data Entry Staff | 45 FTEs | 8 FTEs | 82% reduction |
+- **Faster document processing** per shipment
+- **Reduced customs clearance time** with pre-validated data
+- **Fewer compliance violations** through automated validation
+- **Lower penalty costs** from accurate documentation
+- **Reduced data entry staffing** requirements
 
 ---
 

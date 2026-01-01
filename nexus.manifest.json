@@ -1,0 +1,115 @@
+{
+  "name": "nexus-doc",
+  "displayName": "DocAI - Intelligent Document Processing",
+  "version": "1.0.0",
+  "description": "AI-powered document processing with OCR, data extraction, classification, and intelligent routing. Transform unstructured documents into structured data.",
+  "developer": {
+    "name": "Adverant",
+    "url": "https://adverant.ai",
+    "email": "plugins@adverant.ai",
+    "verified": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adverant/Adverant-Nexus-Plugin-Doc"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "document-processing",
+    "ocr",
+    "data-extraction",
+    "classification",
+    "automation",
+    "idp"
+  ],
+  "nexus": {
+    "minVersion": "1.0.0",
+    "executionMode": "mcp_container",
+    "isolationLevel": 2,
+    "capabilities": [
+      "ocr-processing",
+      "data-extraction",
+      "document-classification",
+      "template-matching",
+      "validation",
+      "export"
+    ],
+    "permissions": [
+      "filesystem:temp",
+      "service:mageagent",
+      "service:fileprocess",
+      "service:graphrag"
+    ],
+    "entrypoint": "dist/index.js",
+    "healthCheck": "/health",
+    "readinessCheck": "/ready",
+    "livenessCheck": "/live"
+  },
+  "resources": {
+    "cpuMillicores": 2000,
+    "memoryMB": 4096,
+    "diskGB": 20,
+    "timeoutMs": 300000,
+    "maxConcurrentJobs": 20
+  },
+  "api": {
+    "version": "v1",
+    "basePath": "/api/v1/doc",
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/process",
+        "description": "Process document"
+      },
+      {
+        "method": "POST",
+        "path": "/classify",
+        "description": "Classify document type"
+      },
+      {
+        "method": "POST",
+        "path": "/extract",
+        "description": "Extract data from document"
+      },
+      {
+        "method": "GET",
+        "path": "/documents/:id",
+        "description": "Get processed document"
+      }
+    ]
+  },
+  "pricing": {
+    "model": "usage_based",
+    "currency": "USD",
+    "tiers": [
+      {
+        "name": "starter",
+        "displayName": "Starter",
+        "priceMonthly": 4900,
+        "limits": { "pagesPerMonth": 1000 },
+        "features": ["ocr", "basic-extraction"]
+      },
+      {
+        "name": "professional",
+        "displayName": "Professional",
+        "priceMonthly": 14900,
+        "limits": { "pagesPerMonth": 10000 },
+        "features": ["advanced-extraction", "classification", "templates"],
+        "popular": true
+      },
+      {
+        "name": "enterprise",
+        "displayName": "Enterprise",
+        "priceMonthly": -1,
+        "limits": { "pagesPerMonth": -1 },
+        "features": ["unlimited", "custom-models", "workflow-integration"]
+      }
+    ]
+  },
+  "marketplace": {
+    "category": "productivity",
+    "subcategory": "document-processing",
+    "featured": true,
+    "tags": ["document-processing", "ocr", "data-extraction", "automation", "idp"]
+  }
+}
